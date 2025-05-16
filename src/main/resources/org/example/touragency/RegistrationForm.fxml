@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="299.0" prefWidth="385.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.touragency.controller.RegistrationFormController">
+   <children>
+      <ImageView fitHeight="667.0" fitWidth="445.0" layoutX="-31.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photo/registr4.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="ComfirmPassword" layoutX="65.0" layoutY="440.0" onAction="#ComfirmPasswordOnAction" prefHeight="31.0" prefWidth="282.0" promptText="Підтвердіть Ваш пароль" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Candara Light" size="15.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="120.0" layoutY="14.0" prefHeight="42.0" prefWidth="173.0" text="Реєстрація">
+         <font>
+            <Font name="Calibri Bold" size="37.0" />
+         </font>
+      </Label>
+      <Separator layoutX="69.0" layoutY="56.0" prefHeight="9.0" prefWidth="274.0" />
+      <Button fx:id="Registration" layoutX="87.0" layoutY="531.0" mnemonicParsing="false" onAction="#btnSignup" prefHeight="62.0" prefWidth="238.0" style="-fx-cursor: hand; -fx-border-radius: 5; -fx-background-color: #90c3f0; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1); -fx-padding: 5 20; -fx-text-fill: white; -fx-border-color: #5fb2fa; -fx-font-family: bold;" text="Зареєструватися">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUserSecondName" layoutX="65.0" layoutY="89.0" prefHeight="31.0" prefWidth="282.0" promptText="Введіть Ваше Прізвище" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUserName" layoutX="65.0" layoutY="142.0" prefHeight="31.0" prefWidth="282.0" promptText="Введіть Ваше Ім'я" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="65.0" layoutY="382.0" prefHeight="31.0" prefWidth="282.0" promptText="Введіть Ваш пароль" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Candara Light" size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="txtPasswordVisible" layoutX="65.0" layoutY="382.0" managed="false" prefHeight="31.0" prefWidth="282.0" promptText="Введіть Ваш пароль" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);" visible="false">
+         <font>
+            <Font name="Candara Light" size="15.0" />
+         </font>
+      </TextField>
+
+      <CheckBox fx:id="cbShowPassword" layoutX="275.0" layoutY="417.0" text="Показати пароль">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></CheckBox>
+      <TextField fx:id="ComfirmPasswordVisible" layoutX="65.0" layoutY="440.0" managed="false" prefHeight="31.0" prefWidth="282.0" promptText="Підтвердіть Ваш пароль" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);" visible="false">
+         <font>
+            <Font name="Candara Light" size="15.0" />
+         </font>
+      </TextField>
+
+      <CheckBox fx:id="cbShowConfirmPassword" layoutX="275.0" layoutY="481.0" text="Показати пароль">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></CheckBox>
+
+      <TextField fx:id="txtThirdName" layoutX="65.0" layoutY="198.0" prefHeight="31.0" prefWidth="282.0" promptText="Введіть Ваше По батькові" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="HomeAdress" layoutX="65.0" layoutY="259.0" prefHeight="31.0" prefWidth="282.0" promptText="Введіть Вашу адресу проживання" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="PhoneNumber" layoutX="65.0" layoutY="321.0" prefHeight="31.0" prefWidth="282.0" promptText="Введіть номер телефону у форматі +380" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+         <font>
+            <Font name="Calibri Light" size="15.0" />
+         </font>
+      </TextField>
+
+      <Separator layoutX="69.0" layoutY="502.0" prefHeight="9.0" prefWidth="274.0" />
+      <Label fx:id="lblPassword1" layoutX="69.0" layoutY="413.0" prefHeight="26.0" prefWidth="174.0" text="Пароль не співпадає!" textFill="#b43e3e">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword2" layoutX="69.0" layoutY="476.0" prefHeight="26.0" prefWidth="174.0" text="Пароль не співпадає!" textFill="#b43e3e">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

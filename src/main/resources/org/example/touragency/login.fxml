@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="352.0" prefWidth="675.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.touragency.controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="446.0" prefWidth="319.0">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" prefHeight="42.0" prefWidth="173.0" text="Увійти">
+               <font>
+                  <Font name="Calibri Bold" size="36.0" />
+               </font>
+            </Label>
+            <Separator layoutX="22.0" layoutY="56.0" prefHeight="9.0" prefWidth="274.0" />
+            <TextField fx:id="txtUserSecondName" layoutX="22.0" layoutY="84.0" prefHeight="30.0" prefWidth="274.0" promptText="Введіть Ваше Прізвище" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUserName" layoutX="22.0" layoutY="136.0" prefHeight="30.0" prefWidth="274.0" promptText="Введіть Ваше Ім'я" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);">
+               <font>
+                  <Font name="Calibri Light" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="22.0" layoutY="192.0" prefHeight="30.0" prefWidth="274.0" promptText="Ввведіть Ваш пароль" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);" />
+            <Button fx:id="LoginButton" layoutX="46.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnSignin" prefHeight="30.0" prefWidth="226.0" style="-fx-cursor: hand; -fx-border-radius: 5; -fx-background-color: #90c3f0; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1); -fx-padding: 5 20; -fx-text-fill: white; -fx-border-color: #5fb2fa; -fx-font-family: bold;" text="Вхід">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label layoutX="32.0" layoutY="320.0" text="Ще не маєте акаунту? Тоді зареєструйтеся">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="RegisterButton" layoutX="46.0" layoutY="354.0" mnemonicParsing="false" onAction="#btnSignup" prefHeight="30.0" prefWidth="226.0" style="-fx-cursor: hand; -fx-border-radius: 5; -fx-background-color: #cfb6a1; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1); -fx-padding: 5 20; -fx-text-fill: white; -fx-border-color: #cca481; -fx-font-family: bold;" text="Реєстрація">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Separator layoutX="22.0" layoutY="236.0" prefHeight="9.0" prefWidth="274.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="460.0" fitWidth="444.0" layoutX="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photo/login1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

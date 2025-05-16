@@ -1,0 +1,38 @@
+.button {
+    -fx-background-color: #90c3f0;
+    -fx-border-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-background-color: #5fa3da;
+}
+
+#RegisterButton {
+    -fx-background-color: #cfb6a1;
+    -fx-border-color: #cca481;
+}
+#RegisterButton:hover {
+    -fx-background-color: #bda08c;
+}
+.text-field, .password-field {
+    -fx-background-radius: 5;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);
+}
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #5fa3da;
+    -fx-background-color: #f7faff;
+}
